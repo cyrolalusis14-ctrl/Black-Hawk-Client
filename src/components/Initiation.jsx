@@ -26,7 +26,7 @@ const Initiation = () => {
           className="max-w-4xl mx-auto"
         >
           <h2 
-            className="text-white font-bold mb-12 tracking-tight leading-none"
+            className="text-white font-bold mb-12 tracking-tighter leading-none"
             style={{ fontSize: 'clamp(2.5rem, 8vw, 6.2rem)', fontFamily: 'var(--font-cinematic)' }}
           >
             MASCULINE EXCELLENCE <br />

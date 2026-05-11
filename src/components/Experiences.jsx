@@ -25,12 +25,14 @@ const Experiences = () => {
     <section id="experiences" className="section-padding bg-black">
       <div className="container">
         <div className="text-center mb-24">
-          <span className="text-accent-gold text-[10px] tracking-[0.4em] font-bold uppercase block mb-4">THE PROTOCOL</span>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8">12-WEEK MASCULINE EXCELLENCE JOURNEY</h2>
-          <div className="w-20 h-1 bg-accent-red mx-auto" />
+          <span className="text-accent-gold text-[10px] tracking-[0.4em] font-bold uppercase block mb-3">THE PROTOCOL</span>
+          <h2 className="text-5xl md:text-6xl font-bold tracking-tighter mb-8 text-white uppercase leading-none" style={{ fontFamily: 'var(--font-cinematic)' }}>
+            12-WEEK MASCULINE EXCELLENCE JOURNEY
+          </h2>
+          <div className="w-24 h-1 bg-accent-red mx-auto" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.id}
@@ -38,21 +40,21 @@ const Experiences = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-[#0a0a0a] border border-white/5 p-12 relative group hover:border-accent-gold/20 transition-all"
+              className="bg-[#050505] border border-white/5 p-12 relative group hover:border-accent-gold/20 transition-all duration-500"
             >
-              <div className="mb-8">
+              <div className="mb-4">
                 <span className="text-accent-gold text-[11px] tracking-[0.3em] font-bold block mb-4 uppercase">
                   PROCESS {exp.id}
                 </span>
-                <h3 className="text-2xl mb-6 leading-tight text-white font-bold uppercase tracking-wide">
+                <h3 className="text-3xl mb-8 leading-tight text-white font-bold uppercase tracking-wide" style={{ fontFamily: 'var(--font-cinematic)' }}>
                   {exp.title}
                 </h3>
-                <p className="text-text-secondary mb-10 leading-relaxed text-sm">
+                <p className="text-text-secondary mb-12 leading-relaxed text-sm font-light">
                   {exp.description}
                 </p>
                 
-                <button className="flex items-center gap-3 text-[10px] tracking-[0.2em] font-bold text-accent-gold hover:text-white transition-colors uppercase">
-                  Learn More <ArrowRight size={14} />
+                <button className="flex items-center gap-3 text-[10px] tracking-[0.2em] font-bold text-accent-gold group-hover:text-white transition-colors uppercase">
+                  Learn More <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
             </motion.div>
