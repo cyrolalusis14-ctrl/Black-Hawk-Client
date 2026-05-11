@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 const Masterclasses = () => {
   const modules = [
-    { title: 'NETWORK LIKE A MAFIA' },
-    { title: "THE HERO'S JOURNEY" },
-    { title: '7-FIGURE EMPIRE' },
-    { title: 'GREEK GOD' }
+    { title: 'NETWORK LIKE A MAFIA', image: '/assets/masterclass-1.png' },
+    { title: "THE HERO'S JOURNEY", image: '/assets/masterclass-2.png' },
+    { title: '7-FIGURE EMPIRE', image: '/assets/masterclass-3.png' },
+    { title: 'GREEK GOD', image: '/assets/masterclass-4.png' }
   ];
 
   return (
@@ -41,7 +41,7 @@ const Masterclasses = () => {
               {/* Card Image Background */}
               <div 
                 className="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity grayscale group-hover:grayscale-0"
-                style={{ backgroundImage: 'url(/assets/masterclass-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                style={{ backgroundImage: `url(${module.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
               />
               
               <div className="relative h-full p-8 flex flex-col justify-end z-20">
