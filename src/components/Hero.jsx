@@ -40,7 +40,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-white font-bold tracking-tight mb-8 uppercase"
-            style={{ fontSize: 'clamp(3rem, 8vw, 6.5rem)', lineHeight: '0.9', fontFamily: 'var(--font-cinematic)' }}
+            style={{ fontSize: 'clamp(2.5rem, 10vw, 6.5rem)', lineHeight: '0.9', fontFamily: 'var(--font-cinematic)' }}
           >
             BLACK HAWK <br />
             ELITE NETWORK

@@ -53,7 +53,7 @@ const Masterclasses = () => {
                 }}
               />
               
-              <div className="relative h-full p-8 flex flex-col justify-end z-20">
+              <div className="relative h-full p-6 md:p-8 flex flex-col justify-end z-20">
                 <span className="text-accent-gold text-[11px] tracking-[0.2em] font-bold mb-1">00{index + 1}</span>
                 <h3 className="text-lg text-white font-bold tracking-wider group-hover:text-accent-gold transition-colors uppercase leading-tight" style={{ fontFamily: 'var(--font-cinematic)' }}>
                   {module.title}

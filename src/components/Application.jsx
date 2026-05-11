@@ -35,7 +35,7 @@ const Application = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-[#050505] p-12 md:p-16 border border-white/5 shadow-2xl"
+            className="bg-[#050505] p-8 md:p-16 border border-white/5 shadow-2xl"
           >
             <form className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12">
               <FormGroup label="Full Name" type="text" placeholder="IDENTITY" />
